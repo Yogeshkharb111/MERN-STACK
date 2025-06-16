@@ -10,16 +10,17 @@ let friesBillAmount=fries+fries+gstOnFood;
 const finalBill=juiceBillAmount+friesBillAmount;
 console.log("finalBill:",finalBill)
 
-console.log("START")
 
-function calculateJuiceBillAmount() {
-    let juice=50;
+function calculateJuiceBillAmount(juice,gstOnJuice) {
+    //let gstOnJuice=0.1
     let juiceBillAmount=juice+juice+gstOnJuice;
     console.log(juiceBillAmount)
 }
-console.log("MID")
-calculateJuiceBillAmount();
-console.log("END")
+
+calculateJuiceBillAmount(60,0.1);
+calculateJuiceBillAmount(60,0.2);
+calculateJuiceBillAmount(60,0.3);
+
 
 
 

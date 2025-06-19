@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Store</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      padding: 1rem 2rem;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    header h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    #root {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      border-radius: 1rem;
+      padding: 1.25rem;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .recipe-name {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.75rem;
+    }
+
+    .recipe-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .rating {
+      color: #ffc107;
+      font-weight: bold;
+    }
+
+    .meal-types {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .meal-btn {
+      padding: 0.5rem 1rem;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-size: 0.8rem;
+      transition: background-color 0.3s;
+    }
+
+    .meal-btn:hover {
+      background-color: #3367d6;
+    }
+
+    @media (max-width: 768px) {
+      #root {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Recipe Store</h2>
+    <button id="home-button">Home</button>
+  </header>
+
+  <main id="root">
+    <div class="card">
+      <p>Dummy Card</p>
+      <button id="dummy-button">Click Me</button>
+    </div>
+  </main>
+
+  <footer>&copy; yogesh.xyz</footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

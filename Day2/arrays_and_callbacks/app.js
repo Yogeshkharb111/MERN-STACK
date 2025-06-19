@@ -38,3 +38,10 @@ console.log(arr.indexOf({name:"Yogesh",City:"Delhi"}))
 console.log(arr.indexOf({name:"Guri",City:"Punjab"}))
 
 
+const myFunc =(a)=>{
+if(a.name==="Yogesh") return true;
+return false
+}
+
+const ans=arr.find(myFunc);
+console.log(ans)

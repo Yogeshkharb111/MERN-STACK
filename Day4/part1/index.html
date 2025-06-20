@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +21,7 @@
 
         .card:hover {
             background-color: antiquewhite;
+            border-color: blueviolet;
         }
 
         #pop-up-view {
@@ -44,11 +44,11 @@
         }
     </style>
 </head>
-
 <body>
     <header>
         <h2>Recipe Store</h2>
         <button>Home</button>
+        
     </header>
     <main>
         <div class="card">
@@ -56,7 +56,12 @@
             <p>Dummy Cuisine</p>
             <p>Dummy Rating</p>
             <p>Dummy Servings</p>
-            <button onclick="handleCardClick()">Click Me</button>
+            <button onclick="handleCardClick({
+                name:'pizza',
+                cuisine:'italian',
+                rating: 4,
+                servings: 3
+            })">Click Me</button>
         </div>
     </main>
     <footer>

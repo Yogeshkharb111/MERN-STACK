@@ -15,9 +15,9 @@ const handleSearchSuggestions = (e) => {
     const request = fetch(`https://youtube138.p.rapidapi.com/auto-complete/?q=${searchText}&hl=en&gl=IN`, {
         method: "GET",
         headers: {
-            "x-rapidapi-key": "59cef08928msh10810e6f3f58241p13fe36jsneaf0bb86af62",
-            "x-rapidapi-host": "youtube138.p.rapidapi.com",
-        },
+		'x-rapidapi-key': 'f7fd3681efmshd4dc158b4845e56p1a6f83jsndb50b9ba50ff',
+		'x-rapidapi-host': 'youtube138.p.rapidapi.com'
+	},
     });
 
     request

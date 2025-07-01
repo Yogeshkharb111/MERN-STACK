@@ -3,6 +3,7 @@ import { Footer } from "../Components/Footer";
 import { SearchResults } from "../Components/SearchResults";
 
 
+
 const SearchPage = (props) => {
     const { text, handleSearchText } = props;
     return (

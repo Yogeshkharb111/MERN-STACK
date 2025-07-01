@@ -4,6 +4,9 @@ import { SearchPage } from "./Pages/SearchPage";
 import { ViewPage } from "./Pages/ViewPage";
 import { NotFoundPage } from "./Pages/NotFoundPage";
 import { useState } from "react";
+import { SearchResults } from "./Components/SearchResults";
+import { ProductResultCard } from "./Components/ProductResultCard";
+
 
 const App = () => {
   const [text, setText] = useState("");

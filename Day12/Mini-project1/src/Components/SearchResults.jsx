@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+
 const SearchResults = (props) => { 
     const { searchQuery } = props;
     const getSearchResults = async () => { 

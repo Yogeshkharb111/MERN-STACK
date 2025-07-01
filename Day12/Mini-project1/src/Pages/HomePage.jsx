@@ -1,10 +1,19 @@
-const HomePage = () => {
+import { Header } from "../Components/Header";
+import { Footer } from "../Components/Footer";
+import { CategoryList } from "../Components/CategoresList";
+
+const HomePage = (props) => {
+        const { text, handleSearchText } = props;
+       
     return (
         <div>
-            <header>
-                <p className="text-purple-600">Shopping App</p>
-            </header>
-            <main></main>
+            <Header text={text} handleSearchText={handleSearchText} />
+            <main className="p-8">
+                <div>
+                    <CategoryList/>
+                </div>
+            </main>
+            <Footer/>
         </div>
     );
   };

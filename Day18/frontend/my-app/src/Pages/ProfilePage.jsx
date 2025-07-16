@@ -36,7 +36,7 @@ const ProfilePage = () => {
             const description = e.target.description.value;
             const quantity = e.target.quantity.value;
 
-            const resp = await fetch("http://localhost:2900/api/v1/products", {
+            const resp = await fetch(`${import.meta.env.VITE_BACKEND_URL}/products`, {
                 method: "POST",
                 body: JSON.stringify({
                     title,
